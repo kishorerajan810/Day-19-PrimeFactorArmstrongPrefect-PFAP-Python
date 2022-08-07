@@ -2,7 +2,7 @@ n=int(input("enter :"))
 j=[int(x) for x in str(n)]
 k,l,m=0,1,[]
 for i in j:#Armstrong number
-    k+=i*i*i
+    k+=pow(i,len(str(n)))
 for i in range(2,n):#Perfect number
     if(n%i==0):
         l+=i
